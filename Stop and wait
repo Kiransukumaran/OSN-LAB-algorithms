@@ -1,0 +1,20 @@
+ALGORITHM:
+SENDER
+Step 1: Start
+Step 2: Create socket
+Step 3: Bind it with socket address structure 
+Step 4: Accept connection
+Step 5: Sending frame to the receiver
+Step  6: Receiving the acknowledgement
+			If the acknowledgement  is “ACK”  or “ack” then send the next frame
+			otherwise send the previous frame once again
+Step 7: Close the socket
+Step 8:Stop
+
+RECEIVER:
+Step 1: Start
+Step 2: Create a stream socket
+Step 3: receiving frame from the send
+Step 4: Send the acknowledgement (ACK or NACK) to sender
+Step 5: Close the socket
+Step 6:Stop

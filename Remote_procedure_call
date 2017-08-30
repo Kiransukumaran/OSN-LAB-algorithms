@@ -1,0 +1,18 @@
+ALGORITHM:
+sum.x
+	step 1: start
+	step 2: declare globally used variables
+	step 3:  intialize program number,version number and procedure number.
+
+RPC client
+	step 1: start
+	step 2: create client
+	step 3: calling function at server.
+	Step 4: stop
+
+RPC server
+step 1: start
+step 2: receiving request from client
+step 3: execute the request
+step 4: return the result
+step 5: stop

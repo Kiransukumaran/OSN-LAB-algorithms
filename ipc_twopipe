@@ -1,0 +1,16 @@
+ALGORITHM:
+
+	step 1:start
+	step 2:call pipe(1)
+	step 3:call pipe(2)
+	step 4:if fork() ==0 // child process
+          close p1[0]
+          close p2[1]
+         write the child message into pipe p1[1]
+         read the parent message from the pipe p2[0]
+	step 5:else //parent process
+           close p1[1]
+           close p2[0]
+           read the child message from the pipe p1[0]
+          write the parent message  into the pipe p2[1]
+	step 6:stop

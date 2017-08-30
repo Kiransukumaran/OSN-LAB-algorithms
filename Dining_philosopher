@@ -1,0 +1,16 @@
+ALGORITHM:
+The algorithm is the for the process,
+step 1: start
+step 2: intialize the thread variables ,thread attributes ,semaphores as required
+step 3: create the threads representing philosopher.
+step 4: wait until the thread function execution.
+Step 5: stop
+
+The algorithm for the philosopher is,
+step 1: Start
+step 2: wait for the left fork
+step 3: wait for the right fork
+step 4:start eating
+Step 5:release the left fork
+Step 6:release the right fork
+Step 7: Stop

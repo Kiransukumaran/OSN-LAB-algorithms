@@ -1,0 +1,21 @@
+ALGORITHM:
+
+	step 1:start
+	step 2:call pipe(1)
+	step 3:call pipe(2)
+	step 4:if fork() ==0 // child process
+         	 	close p[0]
+          		close p[1]
+         		write the size n  into pipe p[1]
+	step 5: else //parent process
+           		close p[1]
+          	 	read the size n from the pipe p[0]
+          		 set a=0 and b=1
+           		print a and b
+           		check while(n>2)
+                		set c= a+b
+                		print c
+                		set a=b
+               		set b=c
+                		decrement c         
+	step 6:stop

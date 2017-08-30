@@ -1,0 +1,14 @@
+ALGORITHM:
+ 	step 1: start
+ 	step 2: set r=getpid()
+ 	step 3: print “parent process id”,r
+ 	step 4: set p=fork()
+ 	step 5: if p>0 then print “parent process”
+ 	step 6: if p=0 then
+                           (i) print child process
+                          (ii) set q=getpid()
+                         (iii) print”ID of child process”
+                         (vi) print 'q'
+                          (v) else if p=-1 then
+                         (vi) print”error”
+ 	step 7: stop

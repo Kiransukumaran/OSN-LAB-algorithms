@@ -1,0 +1,17 @@
+ALGORITHM:
+
+Server:
+	step 1:Start
+	step 2:Declare a structure with members mtype and mtext
+	step 3:Set id = call msgget()
+	step 4:Call the function msg rev ()
+	step 5:Print buf.mtext
+	step 6: stop
+
+Client:
+	step 1:Start
+	step 2:Declare a structure with members mtype and mtext
+	step 3:Set id =call msgget()
+	step 4: Set message into buf.mtext 
+	step 5:call Msg snd()
+	step 6:Stop 

@@ -1,0 +1,16 @@
+ALGORITHM:
+
+	step 1: start
+	step 2: count=0
+	step 3: Read the no :of process,p
+	step 4: Read  the no :of resources,r
+	step 5: Read  the max matrix for each process, max[i][j]
+	step 6: Read  the allocation matrix for each process  ,alloc[i][j]
+	step 7: Read  the available resource matrix ,avail[i][j]
+	step 8 : Find the need matrix  ,need[i][j]
+	step 9: For each incompleted process pi
+		check whether need[i][j] < avail[i][j]
+		if then allocate resources to the process
+		increment Safe sequence
+ 	step 10: If safe sequence ==p then print safe state else unsafe state
+	Step 11 : stop

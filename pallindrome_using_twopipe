@@ -1,0 +1,21 @@
+ALGORITHM:
+	step 1:Start
+	step2:call pipe(1)
+	step 3:call pipe(2)
+	step 4:set pid=fork()
+         if pid >0 // child process
+         close p1[0]
+         close p2[1]
+         write the number to pipe p1[1]
+         read the parent message from the pipe p2[0]
+         print  the number is palindrome or not
+	step 5:else //parent process
+           close p1[1]
+           close p2[0]
+           read the number from pipe pipe p1[0]
+            repeat while(num2>0)
+                       set r=num2%10
+                       set x=x*10+r
+                       set num2=num2/10 
+           	        check if the number is palindrome or not and write the corresponding message into the pipe p2[1]
+	step 6:stop

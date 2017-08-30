@@ -1,0 +1,15 @@
+ALGORITHM:
+SERVER
+Step 1: Start
+Step 2: Create a datagram socket
+Step 3: Bind the socket to the operating system
+Step 4: Receiving/sending process
+step 5: Close the socket
+Step 6: Stop
+
+CLIENT
+Step 1: Start
+Step 2: Create a datagram socket
+Step 3: Receive/Send message to the server
+Step 4: close the socket
+Step 5: Stop

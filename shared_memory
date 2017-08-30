@@ -1,0 +1,10 @@
+ALGORITHM:
+	step 1:Start
+	step 2:Set key_t key =ftok()
+	step 3:Set shmid = call shmget()
+	step 4: Combine the space allocated to the existing space of process
+	step 5:if shmid != -1 then
+           print” shared memory created with id”
+	step 6:else
+           print”shared memory not created”
+	step7 :stop 

@@ -1,0 +1,17 @@
+ALGORITHM:
+
+SERVER
+Step 1: Start
+Step 2: Create socket
+Step 3: Bind it with socket address structure 
+Step 4: Accept connection
+Step 5: Read/Write message to client 
+Step 6: Close the socket
+Step 7:Stop
+
+CLIENT
+Step 1: Start
+Step 2: Create a stream socket
+Step 3: Receive/Send message to the server
+Step 4: Close the socket
+Step 5:Stop

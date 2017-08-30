@@ -1,0 +1,24 @@
+ALGORITHM:
+	step 1:start
+	step 2:call pipe(p)
+	step 3:f=fork()
+	step 4:setpid=getpid()
+	step 5:setppid=getppid()
+	step 6:if f=0 then
+         		 (i) print “i am a child process”
+        		 (ii) print “my id is ”
+       		 (iii) print “enter child message”
+      		  (iv) call fgets(a)
+       		  (v) call write(a)
+      		  (vi) call sleep(1)
+      		 (vii) call read(a)
+     		 (viii) print “child reads and print parent message”
+        		(ix) call puts(a)
+	step 7:if f != 0
+           		  (i) call read(a)
+           		 (ii) print “parent reads and print message”
+          		 (iii) call inputs(a)
+          		 (iv) print “enter parent message”
+            	(v) call fgets(a)
+        	(vi) write(a)
+	step 8:stop

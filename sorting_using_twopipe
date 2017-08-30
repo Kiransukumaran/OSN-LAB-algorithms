@@ -1,0 +1,26 @@
+ALGORITHM:
+	step 1:Start
+	step2:call pipe(1)
+	step 3:call pipe(2)
+	step 4:set pid=fork()
+         if pid >0 // child process
+         close p1[0]
+         close p2[1]
+         write the array size  into pipe p1[1]
+         write the array into pipe p1[1]
+         read the sorted from the pipe p2[0]
+	      print the sorted array in child
+	step 5:else //parent process
+           close p1[1]
+           close p2[0]
+           read the size of array 'n' and array 'a'from the pipe p1[0]
+           repeat for i=0 to n-1
+                      repeat for j=0 to n-i-1
+                           check if a[j]>a[j+1]
+                                  set temp=a[j]
+                                  set a[j]=a[j+1]
+                                  set a[j+1]=temp
+                                  j=j+1
+                      i=i+1     
+           write the sorted array into the pipe p2[1]
+	step 6:stop
